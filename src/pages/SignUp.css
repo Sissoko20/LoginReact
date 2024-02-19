@@ -1,0 +1,209 @@
+
+/* Élément | http://localhost:3000/ */
+
+
+/* Élément | http://localhost:3000/ */
+
+.signup {
+    background: aquamarine;
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+  .bg {
+    background: #a68e0e;
+    width: 50%;
+    height: 50%;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+
+/* Élément | http://localhost:3000/ */
+
+.flex-Container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Feuille de style intégrée #3 | http://localhost:3000/ */
+  
+  .bg {
+    /* width: 50%; */
+    /* height: 50%; */
+    width: 113%;
+    height: 102vh;
+  }
+
+
+/* Élément | http://localhost:3000/ */
+
+.imgBox > img:nth-child(1) {
+    width: 100vh;
+    height: 101vh;
+   
+    border: 10px;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+  .imgBox {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  
+/* Élément | http://localhost:3000/ */
+
+.imgBox > img:nth-child(1) {
+    width: 100vh;
+    height: 101vh;
+   
+    border: 10px;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+
+  /* Feuille de style intégrée #3 | http://localhost:3000/ */
+  
+  .bg {
+    /* background: #a68e0e; */
+    background: #ca04f3;
+  }
+  
+/* Élément | http://localhost:3000/ */
+
+.imgBox > img:nth-child(1) {
+    width: 100vh;
+    height: 101vh;
+    padding: ;
+    border: 10px;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+  .imgBox {
+    width: ;
+  }
+  
+  /* Feuille de style intégrée #3 | http://localhost:3000/ */
+  
+  .bg {
+    /* background: #a68e0e; */
+    background: #ca04f3;
+  }
+  
+  /* Feuille de style intégrée #3 | http://localhost:3000/ */
+  
+  .signup {
+    /* height: 100%; */
+    height: auto;
+   
+   
+/* Élément | http://localhost:3000/ */
+
+.formFlex {
+    flex-direction: ;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+  .inputItems {
+    display: flex;
+    flex-direction: column;
+  }
+   text-align: center;
+  }
+  
+
+/* Élément | http://localhost:3000/ */
+
+.formFlex {
+    flex-direction: ;
+  }
+  
+  /* Élément | http://localhost:3000/ */
+  
+  .inputItems {
+    display: flex;
+    flex-direction: column;
+    input{
+        border: none;
+        background: transparent;
+        border-bottom: 1px solid #000000;
+
+        padding: 2px 5px; /* adjust padding as needed */
+    }
+    }
+   
+
+   
+    
+   
+   
+  
+  
+  /* Feuille de style intégrée #4 | http://localhost:3000/ */
+  
+  .signup {
+    /* width: 50%; */
+    width: 51%;
+  }
+  
+  .signup {
+    .inputItems {
+      width: 100%;
+      height: 34vh;
+     
+      justify-content: space-between;
+    }
+    border: 1px solid;
+  }
+  .btnconnnexion{
+    display: flex;
+  }
+
+
+/* Élément | http://localhost:3000/ */
+
+.btnconnnexion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    button{
+        height: 40px;
+        border-radius: 20px;
+        background:#ee71ad;
+        font-weight: bold;
+    }
+  }
+  
+/* Feuille de style intégrée #4 | http://localhost:3000/ */
+
+.signup {
+    /* width: 51%; */
+    width: 50%;
+  }
+  
+  .signup {
+    /* background: aquamarine; */
+    background: white;
+  }
+  
+  .bg {
+    /* height: 102vh; */
+    height: 101vh;
+  }
+  
+  
+
+  

@@ -2,6 +2,7 @@ import { useState } from "react";
 import {ExoDesign} from "../src/ExoDesign.css"
 import Connexion from "../src/pages/Connexion.js"
 import App from "./App.js";
+import SignUp from "./pages/SignUp.js";
 
 
 
@@ -36,7 +37,7 @@ const handlesetNom= (e)=> {
 
     return(
         <>
-        <div>{isLoggedIn ?(<App/>):(<Connexion/>)}</div>
+        <div>{isLoggedIn ?(<Connexion/>):(<SignUp/>)}</div>
       
       </>
     )
