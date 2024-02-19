@@ -8,7 +8,9 @@ import SignUp from "./pages/SignUp.js";
 
 function Exo() {
    var isLoggedIn=false;
+   var checkConnect=true;
    var content;
+
 
     const [nom, setNom]=useState("")
     const [prenom,setPrenom]=useState("");
@@ -37,8 +39,11 @@ const handlesetNom= (e)=> {
 
     return(
         <>
-        <div>{isLoggedIn ?(<Connexion/>):(<SignUp/>)}</div>
+        {/* <div>{isLoggedIn ?<Connexion/>:<SignUp/>}</div> */}
       
+      <div>
+        {checkConnect ? <App/> :<SignUp/>}
+      </div>
       </>
     )
 }

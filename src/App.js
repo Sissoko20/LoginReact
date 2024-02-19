@@ -1,83 +1,30 @@
-import React, { useState } from "react";
-import { social } from "./dbsocial";
+import React from 'react'
+import {data} from './dataTest'
 
 function App() {
-  const [datasocial, setdatasocial] = useState(social);
-  const [nouveauParticipant, setNouveauParticipan] = useState("");
+  var userId=true
 
-  const handleDel = (id) => {
-    console.log(id);
+  const products= [
+    { title: 'Chou', id: 1, isFruit:false, isAvailable:false  },
+    { title: 'Ail', id: 2, isFruit:false, isAvailable:false  },
+    { title: 'Pomme', id: 3, isFruit:true, isAvailable:true },
+  ];
 
-    const copyDataSocial = [...datasocial];
-    const updatedcpData = copyDataSocial.filter((element) => element.id != id);
-    setdatasocial(updatedcpData);
-  };
+  const listsUserSocial=data.map(el=>
+    <li key={el.id} style={{color:el.userId=="1" ? "brown":"gray"}}>{el.title}</li>)
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    //copy du state
-const participantCopy=[...datasocial]
 
-    //manipulation sur la copy de la state
-    const id=new Date().getTime();
-    const name=nouveauParticipant;
-    const montant = nouveauParticipant;
-    
-    
-participantCopy.push({id, name, montant})
-    //
-    setdatasocial(participantCopy)
-    setNouveauParticipan("");
-  };
-  const handleChange = (event) => {
-    setNouveauParticipan(event.target.value)
-  };
-
-  return (
+  const listItems=products.map(produit=>
+    <li key={produit.id} style={{color: produit.isFruit ? "green" : "red", fontSize:produit.isAvailable ? 50: 20}}>
+      {produit.title}
+    </li>
+    )
+  return(
     <div>
-      <table>
-        <thead>
-          <tr>
-            <th>id</th>
-            <th>Name</th>
-            <th>Montant</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {datasocial.map((element) => (
-            <tr key={element.id}>
-              <td>{element.id}</td>
-              <td>{element.name}</td>
-              <td>{element.montant}</td>
-              <button onClick={() => handleDel(element.id)}> Supprimer</button>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+     <ul>{listsUserSocial}</ul>
 
-      <form action="submit" onSubmit={handleSubmit}>
-        <input
-        value={nouveauParticipant}
-          type="text"
-          onChange={handleChange}
-          placeholder="Ajouter un nom"
-        />
-        <button>Ajouter</button>
-      </form>
     </div>
-  );
+  )
+  
 }
 export default App;
-
-//Gestion des liste
-
-//Gestion des formulaires
-//1 creation du formulation
-/* <form action="submit" onSubmit={}>
-                      <input type='text' placeholder="Ajouter un nom"/> 
-                      <button>Ajouter</button>
-
-            </form>*/
-
-//
