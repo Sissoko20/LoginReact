@@ -68,7 +68,7 @@ const userInfo={
                     </div>
                   <div className='btnconnnexion'>
                     <button> <FontAwesomeIcon icon={faSign}></FontAwesomeIcon> Sign up</button> 
-                    <button> <FontAwesomeIcon icon={faSign}></FontAwesomeIcon> Sign up</button> 
+                    <button> <FontAwesomeIcon icon={faSign}></FontAwesomeIcon> Sign In</button> 
                     
                   </div>
                 </div>
